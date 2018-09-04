@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon ./bin/www --exec babel-node --presets env",
     "dev2": "npm run build && npm run dev",
-    "start": "react-scripts start",
+    "start": "npm run build && npm run dev",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
